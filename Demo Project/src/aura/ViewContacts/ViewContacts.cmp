@@ -1,6 +1,6 @@
 <aura:component controller="ViewContactsApexController" implements="force:lightningQuickAction,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:appHostable,flexipage:availableForAllPageTypes">
     
-    <!-- comments here -->
+    
   
     <aura:attribute name="contactList" type="Contact[]" />
     <aura:attribute name="contactColumns" type="List" />
