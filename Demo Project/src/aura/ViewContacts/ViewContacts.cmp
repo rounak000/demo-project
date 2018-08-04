@@ -1,6 +1,7 @@
 <aura:component controller="ViewContactsApexController" implements="force:lightningQuickAction,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:appHostable,flexipage:availableForAllPageTypes">
     
     <!-- comments here -->
+    <!-- comments here -->
     <aura:attribute name="contactList" type="Contact[]" />
     <aura:attribute name="contactColumns" type="List" />
     <aura:attribute name="nextPageURL" type="string" access="public" default="nextpage" />
