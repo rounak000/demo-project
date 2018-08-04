@@ -1,0 +1,34 @@
+.THIS.classA {
+    text-align: center;
+    border: 3px solid green;
+   	background-color: #e7e7e7
+}
+
+.THIS.buttonA
+{
+    text-align: center;
+}
+
+/*
+  
+.THIS.table {
+     border: 1px solid #ddd;
+     text-align: left;
+     border-collapse: collapse;
+     width: 100%;
+}
+
+.THIS th {
+    border: 1px solid #ddd;
+    text-align: left;
+    padding: 15px;
+    
+}
+
+.THIS td {
+    border: 1px solid #ddd;
+    text-align: left;
+    padding: 15px;
+    
+}
+*/

@@ -1,0 +1,48 @@
+<aura:component controller="ViewContactsApexController" implements="force:lightningQuickAction,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:appHostable,flexipage:availableForAllPageTypes">
+    
+    <aura:attribute name="contactList" type="Contact[]" />
+    <aura:attribute name="contactColumns" type="List" />
+    <aura:attribute name="nextPageURL" type="string" access="public" default="nextpage" />
+  <!--  <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>  -->
+
+    <div class="divA">
+    <img src="{!$Resource.image_google}"/>
+    </div>
+
+    <h1 class="classA">Hello Everyone. This is First Lightning Component</h1>
+   
+    
+	<ui:button aura:id="buttonA" label="Click to See Contact List" press="{!c.doInit}" />
+    <ui:button aura:id="buttonB" label="Click to Empty Contact List" press="{!c.doBack}" /> 
+    <lightning:button variant="brand" label="Go to Next Page" title="Brand action" onclick="{!c.handleNextPage }" />
+ 
+    <!--
+       <table>
+        <tr>
+            <td>
+                <b>ID</b>
+            </td>
+            <td>
+                <b>NAME</b>
+            </td>
+            <td>
+                <b>PHONE</b>
+            </td>
+        </tr>
+            <aura:iteration items="{!v.contactList}" var="items">
+            <tr>  
+               	  <td> {!items.Id}  </td>
+                  <td> {!items.Name}  </td>
+                  <td> {!items.Phone}  </td>
+                
+            </tr>
+            </aura:iteration>
+        </table> -->
+  
+  <lightning:datatable data="{!v.contactList }" 
+                             columns="{!v.contactColumns}" 
+                       keyField="Id" />
+                             
+
+    
+</aura:component>
